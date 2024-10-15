@@ -1,6 +1,8 @@
 package com.example.codealong;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -27,5 +29,20 @@ public class MainActivity extends AppCompatActivity {
 
         m_btnRegister = findViewById(R.id.btnRegister);
         m_btnLogin = findViewById(R.id.btnLogin);
+
+        // lambda version
+        m_btnRegister.setOnClickListener(v -> {
+            startActivity(new Intent(MainActivity.this, RegisterActivity.class));
+            finish();
+        });
+
+        // unnamed listener version
+        m_btnLogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, LoginActivity.class));
+                finish();
+            }
+        });
     }
 }
