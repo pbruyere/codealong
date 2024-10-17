@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         // lambda version
         m_btnRegister.setOnClickListener(v -> {
             startActivity(new Intent(MainActivity.this, RegisterActivity.class));
-            finish();
+            //finish();
         });
 
         // unnamed listener version
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, LoginActivity.class));
-                finish();
+                //finish();
             }
         });
     }

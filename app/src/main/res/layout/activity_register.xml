@@ -12,9 +12,9 @@
         android:id="@+id/txtRegisterEmail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
         android:ems="10"
         android:hint="email"
-        android:layout_marginTop="100dp"
         android:inputType="textEmailAddress" />
 
     <EditText
@@ -23,9 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
         android:ems="10"
-        android:hint="password"
+        android:hint="password (6 minimum)"
         android:layout_below="@+id/txtRegisterEmail"
-        android:inputType="textEmailAddress" />
+        android:inputType="textPassword" />
 
     <Button
         android:id="@+id/btnRegister"
