@@ -20,9 +20,13 @@ public class szGeneral {
         {
             return ERROR_EMAIL_FORMAT;
         }
+        if (!_szEmail.contains("@"))
+        {
+            return ERROR_EMAIL_FORMAT;
+        }
         if (_szEmail.charAt(0) == '@' || _szEmail.charAt(nLength - 1) == '@')
         {
-            return ERROR_EMAIL_FORMAT; // no errors
+            return ERROR_EMAIL_FORMAT;
         }
 
         // password too short (catches empty!)
